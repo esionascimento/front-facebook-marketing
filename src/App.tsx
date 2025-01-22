@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import ErrorPage from "./pages/error";
 import { PUBLIC_ROUTES } from "./routes";
+import ThemeProvider from "./theme/index";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </>
   );
 }
