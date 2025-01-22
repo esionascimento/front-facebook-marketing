@@ -30,7 +30,7 @@ const LoginPage = () => {
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchemaAuth,
-    onSubmit: async (values, helpers): Promise<void> => {
+    onSubmit: async (_values, helpers): Promise<void> => {
       try {
       } catch (err) {
         console.error(err);
