@@ -7,7 +7,7 @@ import {
 } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
-import { createOptions as createBaseOptions } from "./base/create-options";
+import { createOptions as createBaseOptions } from "./base/createOptions";
 import { createOptions as createDarkOptions } from "./dark/createOptions";
 import typography from "./typography";
 
@@ -49,7 +49,7 @@ declare module "@mui/material/styles/createPalette" {
   }
 }
 
-export type ColorPreset = "blue" | "green" | "indigo" | "purple";
+export type ColorPreset = "blue";
 
 export type Contrast = "normal" | "high";
 
